@@ -87,12 +87,12 @@ public class Buoi1 {
         // {}: chứa đoạn lệnh
         Scanner scanner = new Scanner(System.in);
         System.out.print("Mời bạn nhập cân nặng (kg): ");
-        Float cannang = scanner.nextFloat();
+        Float weight = scanner.nextFloat();
         System.out.print("Mời bạn nhập chiều cao (cm): ");
-        Float chieucao = scanner.nextFloat();
-        Float a = chieucao / 100;
+        Float height = scanner.nextFloat();
+        Float a = height / 100;
         Float b = a * a;
-        Float c = cannang / b;
+        Float c = weight / b;
         System.out.println("Chỉ số BMi của bạn là: " + c);
         if (c < 18.5) {
             System.out.println("Bạn bị gầy, nguy cơ phát triển bệnh thấp");
