@@ -108,7 +108,6 @@ public class Buoi1 {
             System.out.println("Bạn bị béo phì cấp độ 3, nguy cơ phát triển bệnh nguy hiểm");
         }
 
-a
     }
 }
 
