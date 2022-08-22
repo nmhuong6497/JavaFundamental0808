@@ -85,28 +85,30 @@ public class Buoi1 {
         //}
         // (): chứa value
         // {}: chứa đoạn lệnh
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Mời bạn nhập cân nặng (kg): ");
-        Float weight = scanner.nextFloat();
-        System.out.print("Mời bạn nhập chiều cao (cm): ");
-        Float height = scanner.nextFloat();
-        Float a = height / 100;
-        Float b = a * a;
-        Float c = weight / b;
-        System.out.println("Chỉ số BMi của bạn là: " + c);
-        if (c < 18.5) {
-            System.out.println("Bạn bị gầy, nguy cơ phát triển bệnh thấp");
-        } else if (18.5 <= c) if (c < 25){
-            System.out.println("Bạn bình thường, nguy cơ phát triển bệnh trung bình");
-        } else if (25 <= c) if (c < 30) {
-            System.out.println("Bạn hơi béo, nguy cơ phát triển bệnh cao");
-        } else if (30 <= c) if (c < 35) {
-            System.out.println("Bạn bị béo phì cấp độ 1, nguy cơ phát triển bệnh cao");
-        } else if (35 <= c) if (c <= 40) {
-            System.out.println("Bạn bị béo phì cấp độ 2, nguy cơ phát triển bệnh rất cao");
-        } else if (c > 40) {
-            System.out.println("Bạn bị béo phì cấp độ 3, nguy cơ phát triển bệnh nguy hiểm");
-        }
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.print("Mời bạn nhập cân nặng (kg): ");
+       // Float weight = scanner.nextFloat();
+       // System.out.print("Mời bạn nhập chiều cao (cm): ");
+        //Float height = scanner.nextFloat();
+        //Float a = height / 100;
+        //Float b = a * a;
+        //Float c = weight / b;
+        //System.out.println("Chỉ số BMi của bạn là: " + c);
+        //if (c < 18.5) {
+            //System.out.println("Bạn bị gầy, nguy cơ phát triển bệnh thấp");
+        //} else if (18.5 <= c) if (c < 25){
+            //System.out.println("Bạn bình thường, nguy cơ phát triển bệnh trung bình");
+        //} else if (25 <= c) if (c < 30) {
+            //System.out.println("Bạn hơi béo, nguy cơ phát triển bệnh cao");
+        //} else if (30 <= c) if (c < 35) {
+            //System.out.println("Bạn bị béo phì cấp độ 1, nguy cơ phát triển bệnh cao");
+        //} else if (35 <= c) if (c <= 40) {
+            //System.out.println("Bạn bị béo phì cấp độ 2, nguy cơ phát triển bệnh rất cao");
+        //} else if (c > 40) {
+            //System.out.println("Bạn bị béo phì cấp độ 3, nguy cơ phát triển bệnh nguy hiểm");
+        //}
+
+
 
     }
 }
