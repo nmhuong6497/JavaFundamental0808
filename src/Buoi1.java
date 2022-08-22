@@ -106,8 +106,7 @@ public class Buoi1 {
             //System.out.println("Bạn bị béo phì cấp độ 2, nguy cơ phát triển bệnh rất cao");
         //} else if (c > 40) {
             //System.out.println("Bạn bị béo phì cấp độ 3, nguy cơ phát triển bệnh nguy hiểm");
-        //}
-
+        // Hello
 
 
     }
