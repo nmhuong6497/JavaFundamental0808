@@ -241,7 +241,48 @@ public class Buoi1 {
 
 
             // Cách 2:Tạo ra mảng nhưng chỉ biết số lượng
-            String[] arrNames = new String[10];
+            // String[] arrNames = new String[10];
+
+
+            // 6. Vòng lặp for
+            //for (int i = 0; i < 10; i++) {
+            //    System.out.println(i);
+            //}
+
+            //for (int i = 10; i >= 0; i--) {
+            //    System.out.println(i);
+            //}
+
+            //for (int i = 1; i <= 100; i++) {
+            //    if (i % 2 == 0) {
+            //        System.out.println(i);
+            //    }
+            //}
+
+//            Scanner scanner = new Scanner(System.in);
+//        System.out.print("Mời bạn nhập số bất kỳ: ");
+//        int number = scanner.nextInt();
+//
+//        if (number < 2) {
+//            System.out.print("Không phải là số nguyên tố");
+//            return;
+//        }
+//
+//        for(int i = 2; i < number; i++) {
+//            if (number % i == 0) {
+//                System.out.print("Không phải là số nguyên tố");
+//                return;
+//            }
+//        }
+//
+//        System.out.print("Số " + number + " là số nguyên tố");
+
+            int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
+
+            // Kiếm số lớn nhất
+            // Kiếm số nhỏ nhất là số lẻ
+
+
 
 
         }
