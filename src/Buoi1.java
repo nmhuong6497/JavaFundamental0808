@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Buoi1 {
-    public static void main(String[] arg) {
+        public static void main(String[] arg) {
 
         //comment
         // 1: Kiểu dữ liệu
@@ -109,6 +109,119 @@ public class Buoi1 {
         //}
 
 
+
+
+        // 5. Câu điều kiện switch case
+        //int month = 1;
+
+        //switch (month) {
+        //    case 1:
+        //    case 2:
+        //    case 3:
+        //      System.out.println("Quý 1");
+        //      break;
+
+        //}
+
+
+        // Tạo chức năng cho người dùng nhập
+        // 1 - Mã tài khoản theo chữ cái
+        //      a: M (Member)
+        //      b: V (Vip)
+        //      c: D (Diamond)
+        // Nếu nhập sai cho thoát
+        // 2 - Nhập tổng tiền
+        // Loại M -> Giảm 5%
+        // Loại V -> Giảm 7%
+        // Loại D -> Giảm 15%
+
+        // Out put
+        // Thành viên thuôc loại gì
+        // Giảm bao nhiêu phần trăm
+        // Tổng tiền cần phải trả là bao nhiêu
+
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.print("Mời bạn nhập mã tài khoản: ");
+        //String acc = scanner.next();
+
+
+
+        //switch (acc) {
+        //    case "a":
+        //        System.out.println("Bạn là thành viên M (Member)");
+        //        break;
+        //    case "b":
+        //        System.out.println("Bạn là thành viên V (Vip)");
+        //        break;
+        //    case "c":
+        //        System.out.println("Bạn là thành viên D (Diamond)");
+        //        break;
+        //}
+
+        //float giam = 1f;
+
+        //switch (acc) {
+        //    case "a":
+         //       System.out.println("Bạn được giảm 5%");
+        //        float giam = 5/100;
+        //        break;
+        //    case "b":
+        //        System.out.println("Bạn được giảm 7%");
+        //        float giam = 7 / 100;
+        //        break;
+        //    case "c":
+        //        System.out.println("Bạn được giảm 15%");
+         //       float giam = 15 / 100;
+        //        break;
+        //}
+
+        //int i = 100000;
+        //float price = i * (100 - giam);
+
+        //switch (acc) {
+        //    case "a":
+        //        System.out.println("Số tiền bạn cần phải trả là: " + price);
+        //        break;
+        //    case "b":
+        //        System.out.println("Số tiền bạn cần phải trả là: " + price);
+        //        break;
+        //    case "c":
+         //       System.out.println("Số tiền bạn cần phải trả là: " + price);
+         //       break;
+        //}
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Mời bạn nhập mã khách hàng: ");
+            String codeUser = scanner.nextLine();
+            System.out.print("Mời bạn tổng tiền: ");
+            int totalPayment = scanner.nextInt();
+            int discountPercent = 0;
+            String categoryCodeUser = "";
+
+            switch (codeUser) {
+                case "M":
+                case "m":
+                    discountPercent = 5;
+                    categoryCodeUser = "Member";
+                    break;
+                case "V":
+                case "v":
+                    discountPercent = 7;
+                    categoryCodeUser = "Vip";
+                    break;
+                case "D":
+                case "d":
+                    discountPercent = 15;
+                    categoryCodeUser = "Diamond";
+                    break;
+                default:
+                    System.out.print("Không đúng mã khách hàng");
+                    return;
+            }
+            totalPayment = (int) (totalPayment * ((float) (100 - discountPercent) / 100 ));
+            System.out.println("Thành viên thuộc loại " + categoryCodeUser);
+            System.out.println("Được ưu đãi giảm " + discountPercent + "%");
+            System.out.println("Số tiền cần phải thanh toán là " + totalPayment + " VNĐ");
 
     }
 }
