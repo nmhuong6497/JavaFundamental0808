@@ -337,13 +337,27 @@ public class Buoi1 {
             //}
 
 
-            Scanner scanner = new Scanner(System.in);
-            int value = -1;
-            do {
-                    System.out.print("Mời bạn nhập tuổi: ");
-                    value = scanner.nextInt();
-            } while (value < 0);
-            System.out.println("Bạn hiện tại " + value + " tuổi");
+            //Scanner scanner = new Scanner(System.in);
+            //int value = -1;
+            //do {
+            //        System.out.print("Mời bạn nhập tuổi: ");
+            //        value = scanner.nextInt();
+            //} while (value < 0);
+            //System.out.println("Bạn hiện tại " + value + " tuổi");
+
+
+            //------------------------------------------------------------------------------------
+
+
+            // Hướng đối tượng
+            // Object (instance) và class
+
+            // Định nghĩa ra Object (instance)
+            Animal cat = new Animal();
+            cat.weight = "1.2 kg";
+            cat.height = "15 cm";
+            cat.run("Chạy bằng 4 chân");
+
 
 
 
