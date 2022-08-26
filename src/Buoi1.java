@@ -282,7 +282,7 @@ public class Buoi1 {
             // Kiếm số lớn nhất
             int maxNumber = arrNumber[0];
             for (int i = 0; i < arrNumber.length; i++) {
-                if (maxNumber < arrNumber[i] && arrNumber[i] % 2 != 0) {
+                if (maxNumber < arrNumber[i]) {
                     maxNumber = arrNumber[i];
                 }
             }
