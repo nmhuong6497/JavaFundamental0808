@@ -277,25 +277,49 @@ public class Buoi1 {
 //
 //        System.out.print("Số " + number + " là số nguyên tố");
 
-            int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
+//            int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
 
             // Kiếm số lớn nhất
-            int maxNumber = arrNumber[0];
-            for (int i = 0; i < arrNumber.length; i++) {
-                if (maxNumber < arrNumber[i]) {
-                    maxNumber = arrNumber[i];
-                }
-            }
-            System.out.println(maxNumber + " là số lớn nhất");
+//            int maxNumber = arrNumber[0];
+ //           for (int i = 0; i < arrNumber.length; i++) {
+ //               if (maxNumber < arrNumber[i]) {
+//                    maxNumber = arrNumber[i];
+//               }
+   //         }
+ //           System.out.println(maxNumber + " là số lớn nhất");
 
+   //         // Kiếm số nhỏ nhất là số lẻ
+   //         int minOddNumber = arrNumber[0];
+   //         for (int i = 0; i < arrNumber.length; i++) {
+   //             if (minOddNumber > arrNumber[i] && arrNumber[i] % 2 != 0) {
+    //                minOddNumber = arrNumber[i];
+   //             }
+   //         }
+   //         System.out.println(minOddNumber + " là số lẻ nhỏ nhất");
+
+
+
+            //----------------------------------------------------------------------------------------
+
+
+            int[] arrNumber = {2, 3, 4, 5, 6, 10, 1, -1, 20, 30, 15, 16, 17, 18, 21, 22, 23};
+
+            // Kiếm số lớn nhất
             // Kiếm số nhỏ nhất là số lẻ
-            int minOddNumber = arrNumber[0];
-            for (int i = 0; i < arrNumber.length; i++) {
-                if (minOddNumber > arrNumber[i] && arrNumber[i] % 2 != 0) {
-                    minOddNumber = arrNumber[i];
+
+            int max, min;
+            max = min = arrNumber[0];
+
+            for (int i = 1; i < arrNumber.length; i++) {
+                if (arrNumber[i] > max) {
+                    max = arrNumber[i];
+                } else if (arrNumber[i] < min && arrNumber[i] % 2 != 0) {
+                    min = arrNumber[i];
                 }
             }
-            System.out.println(minOddNumber + " là số lẻ nhỏ nhất");
+
+            System.out.println("Số lớn nhất " + max);
+            System.out.println("Số nhỏ nhất " + min);
 
 
 
