@@ -280,7 +280,23 @@ public class Buoi1 {
             int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
 
             // Kiếm số lớn nhất
+            int maxNumber = arrNumber[0];
+            for (int i = 0; i < arrNumber.length; i++) {
+                if (maxNumber < arrNumber[i] && arrNumber[i] % 2 != 0) {
+                    maxNumber = arrNumber[i];
+                }
+            }
+            System.out.println(maxNumber + " là số lớn nhất");
+
             // Kiếm số nhỏ nhất là số lẻ
+            int minOddNumber = arrNumber[0];
+            for (int i = 0; i < arrNumber.length; i++) {
+                if (minOddNumber > arrNumber[i] && arrNumber[i] % 2 != 0) {
+                    minOddNumber = arrNumber[i];
+                }
+            }
+            System.out.println(minOddNumber + " là số lẻ nhỏ nhất");
+
 
 
 
